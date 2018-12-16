@@ -1,5 +1,9 @@
 spring:
   redis:
+    cache:
+      cluster-nodes: 192.168.96.128:7001,192.168.96.128:7002,192.168.96.128:7003
+      command-timeout: 5000
+      password: NSK924841191nsk
     host: 127.0.0.1
     port: 6379
     password: NSK924841191nsk
