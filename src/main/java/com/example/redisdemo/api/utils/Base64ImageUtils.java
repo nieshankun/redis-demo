@@ -19,6 +19,11 @@ public class Base64ImageUtils {
         // for sonar
     }
 
+    /**
+     * 将图片内容编码为字符串
+     * @param file
+     * @return
+     */
     public static String encodeImageToBase64(MultipartFile file) {
         byte[] bytes = null;
         try {
@@ -30,6 +35,11 @@ public class Base64ImageUtils {
         return encoder.encode(bytes).trim();
     }
 
+    /**
+     * 将图片内容解码为输入流
+     * @param base
+     * @return
+     */
     public static InputStream decodeBase64ToImage(String base) {
         BASE64Decoder decoder = new BASE64Decoder();
         byte[] decodeBytes = null;
